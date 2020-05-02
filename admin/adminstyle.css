@@ -1,0 +1,93 @@
+/******************* ADMIN COLORS   *********************/
+
+/*
+    Primary: #333c4a (Dark Blue)
+    Secondary: #495664 (Slate Blue)
+    Tertiary: #f6f7d3 (Cream)
+    White: #f8fceb (White)
+
+*/
+
+
+/******************* SIDEBAR STYLES *********************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #343a40;
+}
+
+#sidebar {
+    height: 100vh;
+    background-color: #333c4a;
+    color: #f8fceb;
+    position: sticky;
+}
+
+#sidebar>ul {
+    width: 100%;
+}
+
+nav, aside {
+    padding: 0px !important;
+}
+
+.navbar-brand {
+    padding-top: 15px !important;
+}
+
+.navbar-brand {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#sidebar li {
+    display: inline-block;
+    padding-top: 0px !important;
+    padding-bottom: 8px;
+}
+
+#sidebar a.nav-link {
+    display: block;
+    width: 100%;
+    padding-left: 16px !important;
+}
+
+#sidebar a.nav-link:hover {
+    background-color: #495664;
+}
+
+#link-container {
+    width: 100%;
+}
+
+#logout {
+    width: 100%;
+    background-color: #f8fceb;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logout-btn {
+    width: 100%;
+    display: inline-block;
+    border-radius: 0px;
+    text-align: left;
+    padding-right: -2px;
+}
+/****************** MAIN PAGES *******************/
+
+main {
+    background-color: #495664;
+    padding: 5px;
+}
+
+.scrollTable {
+    height: 500px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
