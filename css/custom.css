@@ -1,0 +1,331 @@
+/*
+
+    COLOR PALETTE: 
+    #F3F9D2
+    #7ED3B2 - Primary
+    #F1AB86 - Secondary
+    #F07966 - Tertiary
+    #C45948 
+
+*/
+
+/************ GENERIC CUSTOM CSS ***************/
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Lato', 'Roboto', 'Helvetica', sans-serif;
+}
+
+.bg-prim {
+    background-color: #7ED3B2;
+}
+
+.bg-sec {
+    background-color: #F1AB86;
+}
+
+.btn-outline-prim {
+    color: #7ED3B2;
+    background-color: transparent;
+    background-image: none;
+    border-color: #7ED3B2;
+}
+
+.btn-outline-sec {
+    color: #F1AB86;
+    background-color: transparent;
+    background-image: none;
+    border-color: #F1AB86;
+}
+
+.text-prim {
+    color: #7ED3B2;
+}
+
+.text-sec {
+    color: #F1AB86;
+}
+
+/***************** HEADER SECTION CSS ***************/
+
+nav {
+    padding: 2rem;
+}
+
+
+.nav-link:hover {
+    border-bottom: 3px solid #F3F9D2;
+    padding: 5px;
+    transition: 0.5s ease;
+}
+
+/* For the search button in the navbar */
+#search:hover {
+    background-color: #F07966;
+    color: black;
+}
+
+/***************** HERO SECTION CSS *****************/
+
+.btn-hero {
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+
+a.btn-hero.bg-prim:hover {
+    background-color: #64A88E;
+    color: black;
+}
+
+a.btn-hero.bg-sec:hover {
+    background-color: #F07966;
+    color: black;
+}
+
+.hero-container-main {
+    text-align: right;
+    line-height: 3rem;
+    margin-top: 5rem;
+}
+
+/* .hero-main {
+    background-attachment: fixed;
+    background-image: url('../img/pepper_hero.jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -17rem;
+    height: 85vh;
+} */
+
+/** Photo by Ashkan Forouzani on Unsplash **/
+/** Photo by Isai Dzib on Unsplash **/
+
+
+@media (max-width:961px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    .hero-main {
+        background-image: none;
+        background-color: #64A88E;
+    }
+    .hero-container-main {
+        text-align: center;
+        color: #F3F9D2;
+    }
+}
+@media (min-width:962px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .hero-main {
+        background-image: url('../img/pepper_hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: fixed;
+        background-position-y: -10rem;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+/************** FEATURE ***********************/
+
+#feature-sec .card:hover {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+}
+
+/************** FOOTER ***********************/
+
+footer {
+    text-align: center;
+}
+
+footer .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/************** ABOUT *************************/
+
+.hero-about {
+    background-attachment: fixed;
+    background-image: url('../img/about.jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -12rem;
+    height: 85vh;
+    margin-bottom: 0;
+}
+
+.hero-about h1 {
+    text-align: center;
+    color: #F3F9D2;
+    -webkit-text-stroke: 1px black;
+}
+
+.aboutBlurb {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.aboutBlurb>a:hover {
+    background-color: #64A88E;
+}
+
+#title-box {
+    border: 2px solid #7ED3B2;
+    background-color: #7ED3B2;
+    position: absolute;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 25%;
+    bottom: 4.5rem;
+    width: 50%;
+    z-index: 15px;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    border-radius: 8px;
+}
+
+/************* LOGIN FORM ***************/
+
+.login-form { 
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f6f7d3;   
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  /************** ARCHIVE STYLES **************/
+
+  .hero-archive {
+      background-image: url('../img/stuffed_pepper.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: fixed;
+      background-position-y: -23rem;
+      height: 70vh;
+  }
+
+  .hero-container-archive {
+      text-align: center;
+      color: white;
+      margin-top: 8rem;
+      padding: 3rem;
+      font-weight: 900;
+  }
+
+  .post-list {
+      padding: 12px;
+      margin-top: 2rem;
+  }
+
+  #view {
+      padding: 10px;
+      margin-bottom: 3rem;
+      margin-top: 5rem;
+      min-height: 60vh;
+      display: block;
+      overflow: auto;
+    }
+
+/************ COMMENTS *************/
+
+/** 
+#7ED3B2 - Primary
+#F1AB86 - Secondary
+ */
+
+.comment:nth-child(odd) {
+    background-color: #7ED3B2;
+    border-color: #7ED3B2;
+}
+
+.comment:nth-child(even) {
+    background-color: #F1AB86;
+    background-color: #F1AB86;
+}
+
+.comment {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*************** FOOD API STYLES ****************/
+
+/*Photo by Katie Smith on Unsplash*/
+
+.hero-api {
+    background-attachment: fixed;
+    background-image: url('../img/cookingtable.jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -19rem;
+    height: 60vh;
+}
+
+.hero-container-api {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#reddit-post {
+    width: 70%;
+}
+
+.subreddit-selection {
+    text-align: center;
+}
